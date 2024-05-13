@@ -36,7 +36,7 @@ public class Snake : MonoBehaviour
         if (other.CompareTag("Food"))
         {
             Grow();
-        }else if (other.CompareTag("Wall"))
+        }else if (other.CompareTag("Wall") || other.CompareTag("Player"))
         {
             GameOver();
         }
